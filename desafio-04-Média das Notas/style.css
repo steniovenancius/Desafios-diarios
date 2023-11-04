@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 4rem;
+}
+#container {
+    margin-top: 1rem;
+}
+header::after {
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: orange;
+    display: inline-block;
+    
+}
+main {
+    width: 50%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+main section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+main section:nth-child(1) form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    font-size: .9rem;
+}
+form input[type=text]{
+    height: 30px;
+    padding-left: .5rem;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black
+}
+form input[type=submit]{
+    height: 35px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: orange
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
+}
+
+input[type=text]::placeholder {
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.5rem;
+}
+p+div {
+    height: 45px;
+    margin-top: 1rem;
+    border-radius:  10px;
+    color: white;
+    background-color: rgb(0, 153, 255);
+}
+#resultado {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
