@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#Desafio {
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+#descricao h4::after{
+    content: " ";
+    width: 35%;
+    height: 2px;
+    background-color: rgb(127, 161, 255);
+    display: block;
+}
+main #descricao p {
+    margin-top: 1rem;
+}
+
+#resolucao {
+    margin-top: 1rem;
+}
+form input[type=button] {
+    width: 20%;
+}
+small {
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+p#numerosEmSequencia {
+    margin-top: 1rem;
+}
