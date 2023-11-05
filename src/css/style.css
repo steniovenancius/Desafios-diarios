@@ -5,19 +5,29 @@
     justify-content: center;
 }
 
+p + div::after {
+    content: "Página em construção";
+    padding: 1rem;
+    position: relative;
+    top: 10px;
+    color:white;
+    background-color: red;
+}
 ul {
     border: 1px dashed black;
     border-radius: 8px;
     padding: 1rem;
     display: grid;
     grid-template-columns: 350px 350px;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
 ul li {
     height: 30px;
     width: 300px;
-    padding: 0 5px;
+    padding: 0 .5rem;
     list-style: none;
     color: white;
     display: flex;
