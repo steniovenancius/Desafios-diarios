@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cozinha Musical</title>
+
+    <!-- Fonte: Poppins 300, 400, 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS e Js-->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>A Cozinha Musical</h1>
+            <p>
+                Crie um programa que simule uma cozinha onde cada ingrediente adicionado à receita gera uma nota musical. Por exemplo: adicionar "Tomate" toca um "Dó", "Cebola" toca um "Ré", etc.
+            </p>
+        </section>
+        <section>
+            <form>
+                <label for="campoIngrediente">Insira um ingrediente:</label>
+                <input type="text" id="campoIngrediente" placeholder="Ex.: Tomate">
+                <input type="button" id="btnSubmit" value="Inserir na Lista">
+            </form>
+            <small id="lista">
+                Lista de Ingredientes: <br>
+                    - Alho <br>
+                    - Beterraba <br> 
+                    - Cebola <br>
+                    - Cenoura <br>
+                    - Pimenta <br>
+                    - Pimentão <br>
+                    - Tomate
+            </small>
+        </section>
+        <section>
+            <h4>Ingredientes adicionados: </h4>
+            <p id="Mix"> </p>
+        </section>
+    </main>
+</body>
+</html>
