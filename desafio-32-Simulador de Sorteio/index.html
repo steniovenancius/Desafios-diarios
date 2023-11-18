@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Sorteio</title>
+
+    <!-- Fonte: Exo 2 - 400 500 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css e Js -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section id="home">
+        <main>
+            <section>
+                <div>
+                    <h2>32° Dia - Simulador de Sorteio</h2>
+                    <p>Escreva um programa que simula um sorteio de loteria, dada a quantidade de números que deve ser gerado, ele gera os números aleatórios.</p>
+                </div>
+                <div>
+                    <form id="form">
+                        <label for="inputQtd">Informe a quantidade de números:</label>
+                        <input type="text" id="inputQtd" placeholder="Ex.: 6">
+                        <input type="submit" id="btnSubmit" value="Gerar">
+                    </form>
+                </div>
+            </section>
+            <section>
+                <p>Seus números são:</p>
+                <p id="numerosGerados"></p>
+            </section>
+        </main>
+    </section>
+</body>
+</html>
