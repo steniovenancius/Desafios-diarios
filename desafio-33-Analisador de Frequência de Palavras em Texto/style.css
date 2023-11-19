@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    background-color: bisque;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.425);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center; 
+}
+h2::after {
+    content: " ";
+    height: 2px;
+    width: 80%;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    background-color: green;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+textarea {
+    outline: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+input[type=submit] {
+    height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: green;
+    color: bisque;
+    transition: all 300ms ease-in-out;
+}
